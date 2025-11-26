@@ -33,7 +33,7 @@ public class Ejemplo01 {
             contador = contador + 1;
         } while (contador <= 10);
 
-        mensaje = String.format("%s\nLa suma es %d\n", mensaje,suma);
+        mensaje = String.format("%s\nLa suma es %d\n", mensaje, suma);
         System.out.printf("%s\n", mensaje);
     }
 
