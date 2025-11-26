@@ -34,9 +34,24 @@ public class Ejemplo021 {
             System.out.println("Ingrese (s, si, y, yes) si desea salir del ciclo ");
             salida = entrada.nextLine();
 
-            if (salida.equals("s") || salida.equals("si") || salida.equals("y") || salida.equals("yes")) {
+            switch (salida) {
+                case "y":
+                    bandera = false;
+                case "yes":
+                    bandera = false;
+                case "s":
+                    bandera = false;
+                case "si":
+                    bandera = false;
+                // tambien se puede hacer se uede agrupar los case
+                case "Y":
+                case "YES":
+                case "S":
+                case "SI":
+                    bandera = false;
 
-                bandera = false;
+                    break;
+
             }
 
         } while (bandera); // (bandera==true)
