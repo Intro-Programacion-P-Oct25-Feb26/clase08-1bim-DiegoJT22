@@ -32,18 +32,18 @@ public class Ejemplo08 {
         do {
             // para manejar el signo asociado 
             if (denominador % 2 == 0) {
-                signo = "+";
-            } else {
                 signo = "-";
+            } else {
+                signo = "+";
             }
             
-            cadena = String.format("%s%s%d/%d ", 
+            cadena = String.format("%s%s%d/%d\n", 
                     cadena,
                     signo,
                     numerador, 
                     denominador);
             denominador = denominador + 1;
-
+            numerador = numerador +1;
         } while (denominador <= limite);
 
         System.out.println(cadena);
