@@ -36,14 +36,14 @@ public class Ejemplo08 {
             } else {
                 signo = "+";
             }
-            
-            cadena = String.format("%s%s%d/%d\n", 
+
+            cadena = String.format("%s%s%d/%d\n",
                     cadena,
                     signo,
-                    numerador, 
+                    numerador,
                     denominador);
             denominador = denominador + 1;
-            numerador = numerador +1;
+            numerador = numerador + 1;
         } while (denominador <= limite);
 
         System.out.println(cadena);
